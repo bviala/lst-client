@@ -7,7 +7,8 @@
     
     <!-- DATE SELECTION -->
     <select
-      v-model="selectedDaysAgoOption">
+      v-model="selectedDaysAgoOption"
+      class="dateSelection">
       <option
         v-for="daysAgoOption in daysAgoOptions"
         :key="daysAgoOption"
@@ -37,10 +38,12 @@
           :caption="'makers'"/>
       </div>
 
-      <post
-        v-for="post in posts"
-        :key="post.id"
-        :post="post"/>
+      <div class="posts">
+        <post
+          v-for="post in posts"
+          :key="post.id"
+          :post="post"/>
+      </div>
     </div>
 
   </div>
@@ -109,6 +112,9 @@ export default {
 </script>
 
 <style>
+html {
+  background-color: #F8F8F8;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -117,16 +123,25 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
   --primary-color: #ea532a;
+  --card-radius: 3px;
 }
 h1 {
   color: var(--primary-color)
 }
-select {
+</style>
+<style scoped>
+.dateSelection {
   margin-bottom: 2em;
 }
 .keyData {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 2em;
+}
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 </style>

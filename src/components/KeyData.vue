@@ -23,13 +23,13 @@ export default {
 </script>
 
 <style scoped>
-.container{
+.container {
   margin: 1em;
 }
-.data{
+.data {
   color: var(--primary-color);
 }
-.caption{
+.caption {
   text-transform: uppercase;
 }
 </style>

@@ -3,6 +3,7 @@
 </template>
 
 <style>
+/* FROM http://tobiasahlin.com/spinkit/ */
 .spinner {
   width: 40px;
   height: 40px;
