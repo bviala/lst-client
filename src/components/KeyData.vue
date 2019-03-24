@@ -1,12 +1,12 @@
 <template>
-  <div class="keyData">
-      <span class="data">
-        {{ data }}
-      </span>
-      <span class="caption">
-        {{ caption }}
-      </span>
+  <div class="container">
+    <div class="data">
+      {{ data }}
     </div>
+    <div class="caption">
+      {{ caption }}
+    </div>
+  </div>
 </template>
 
 <script>
@@ -23,11 +23,8 @@ export default {
 </script>
 
 <style scoped>
-.keyData{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100px;
+.container{
+  margin: 1em;
 }
 .data{
   color: var(--primary-color);
