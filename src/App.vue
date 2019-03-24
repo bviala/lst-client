@@ -64,7 +64,7 @@ export default {
   },
   data () {
     return {
-      daysAgoOptions: Array.from({length: 31}, (v, k) => k),
+      daysAgoOptions: Array.from({length: 31}, (v, k) => k), // [0, 1, ... 30]
       selectedDaysAgoOption: 0
     }
   },
